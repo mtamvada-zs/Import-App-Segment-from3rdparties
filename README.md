@@ -56,7 +56,7 @@ The following is the Import template for ZPA:
 | Application Name | Application FQDN/IP | Server IP | TCP Ports | UDP Ports | App Owner Contact | Application Importance | Hosting Location | Environment |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 
-Note: The fields Application FQDN/IP, TCP Ports, UDP Ports are mandatory while mapping. 
+
 
 **To run the code**
 
