@@ -1,0 +1,58 @@
+Asset Id,Asset Name_x,Host Id,Netbios Name,Mac Address,IPV4 Addresses,IPV6 Addresses,Operating System Category,OS,Operating System Version,Operating System Lifecycle Stage,Hardware Category,Hardware Name,Hardware Lifecycle Stage,CPU Count,CPU Speed (mhz),CPU Description,Total Memory (mb),Bios Description,Bios Serial Number,Bios Asset Tag,Time Zone,Last System Boot,Last Logged-In User,Inventory Source,Agent Id,Inventory Last Updated On,Architecture,Modules,Sources,Criticality Score,TruRisk Score_x,Hardware Uuid,Activity,Tags,CVE,CVE-Description,CVSSv2 Base (nvd),CVSSv3.1 Base (nvd),QID,Title,Severity,KB Severity,Type Detected,Last Detected,First Detected,Protocol_x,Port_x,Status,Asset Name_y,Asset IPV4,Asset IPV6,Solution,Asset Tags,Disabled,Ignored,QVS Score,Detection AGE,Published Date,Patch Released,Category,CVSS Rating Labels,RTI,Operating System,Last Fixed,Last Reopened,Times Detected,Threat,Vuln Patchable,Asset Critical Score,TruRisk Score_y,Vulnerability Tags,Results,IP,DNS Host Name,Service,Protocol,Port,Default Service,Date First Found,Date Last Updated
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.34.176.34,windows,CONNECTED DEVICES PLATFORM SERVICE,tcp,5040,,2024-06-20 17:29:40,2024-07-12 17:22:36
+679756466.0,10.66.179.34,403277690.0,-,,10.66.179.34,,Unidentified / Unidentified,Unidentified,-,Not Applicable,Unidentified / Unidentified,Unidentified,Not Applicable,0.0,-,-,-,-,-,-,-,-,Unknown,IP,-,"Jul 24, 2024",-,VM,IP,2.0,240.0,-,"Jul 24, 2024",-,-,-,-,-,38909.0,SHA1 deprecated setting for SSH,2.0,2.0,Confirmed,"Jul 24, 2024","Jul 24, 2024",TCP,22,ACTIVE,10.66.179.34,10.66.179.34,,"Avoid using deprecated cryptographic settings. 
+Use best practices when configuring SSH.
+Refer to NIST Retires SHA-1 Cryptographic Algorithm (SSH) .
+
+Other documents to refer
+Deprecate settings listed for red hat
+Key exchange 
+CBC Cipher  
+
+
+Settings currently considered deprecated:
+
+1.Key exchange algorithms:
+diffie-hellman-group1-sha1, rsa1024sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, gss-gex-sha1-*, gss-group1-sha1-* and gss-group14-sha1-*.
+
+2.MAC:
+ hmac-sha1, hmac-sha1-96, hmac-sha1-etm@openssh.com, hmac-sha1-96-etm@openssh.com
+
+3.Host key:
+ ssh-rsa, ssh-dss, ssh-rsa-cert-v01@openssh.com, ssh-dss-cert-v01@openssh.com(Avoid using deprecated cryptographic settings. <P>
+Use best practices when configuring SSH.<P>
+https://www.nist.gov/news-events/news/2022/12/nist-retires-sha-1-cryptographic-algorithm
+
+Other documents to refer<BR>
+https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/7.4_release_notes/chap-red_hat_enterprise_linux-7.4_release_notes-deprecated_functionality_in_rhel7
+https://www.ietf.org/archive/id/draft-ietf-curdle-ssh-kex-sha2-13.html
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2008-5161
+
+
+Settings currently considered deprecated:<P>
+
+1.Key exchange algorithms:<BR>
+diffie-hellman-group1-sha1, rsa1024sha1, diffie-hellman-group14-sha1, diffie-hellman-group-exchange-sha1, gss-gex-sha1-*, gss-group1-sha1-* and gss-group14-sha1-*.<P>
+
+2.MAC:<BR>
+ hmac-sha1, hmac-sha1-96, hmac-sha1-etm@openssh.com, hmac-sha1-96-etm@openssh.com<P>
+
+3.Host key:<BR>
+ ssh-rsa, ssh-dss, ssh-rsa-cert-v01@openssh.com, ssh-dss-cert-v01@openssh.com<P>)",,No,No,-,4.0,"Sep 28, 2023",-,General remote services,LOW,"Easy Exploit,Patch Not Available",-,-,-,2.0,"vulnerable to collision attacks, which are designed to fabricate the same hash value for different input data.each hash is supposedly unique.",No,2.0,240.0,,"#table cols=""2""
+Type Name
+key_exchange diffie-hellman-group14-sha1
+host_key_algorithm ssh-rsa
+",10.66.179.34,,Kerberos-5,tcp,88,kerberos,2024-07-25 01:05:21,2024-07-25 01:47:25
+679869609.0,10.66.179.35,403288865.0,-,,10.66.179.35,,Unidentified / Unidentified,Unidentified,-,Not Applicable,Unidentified / Unidentified,Unidentified,Not Applicable,0.0,-,-,-,-,-,-,-,-,Unknown,IP,-,"Jul 24, 2024",-,VM,IP,2.0,242.0,-,"Jul 24, 2024",-,-,-,-,-,38173.0,SSL Certificate - Signature Verification Failed Vulnerability,2.0,2.0,Confirmed,"Jul 24, 2024","Jul 24, 2024",TCP,443,NEW,10.66.179.35,10.66.179.35,,Please install a server certificate signed by a trusted third-party Certificate Authority.(Please install a server certificate signed by a trusted third-party Certificate Authority.),,No,No,-,4.0,"Jan 29, 2003",-,General remote services,MEDIUM,"Easy Exploit,Patch Not Available",-,-,-,1.0,"By exploiting this vulnerability, man-in-the-middle attacks in tandem with DNS cache poisoning can occur.
+<P>
+Exception:<BR>
+If the server communicates only with a restricted set of clients who have the server certificate or the trusted CA certificate, then the server or CA certificate may not be available publicly, and the scan will be unable to verify the signature.",No,2.0,242.0,,"Certificate #0 emailAddress=support@zscaler.com,CN=*.zscalerone.net,OU=Zscaler,O=Zscaler_Inc.,L=San_Jose,ST=California,C=US ISSUER:_emailAddress=support@zscaler.com,CN=Zscaler_QA_Root_CA,OU=Zscaler,O=Zscaler\,_Inc.,L=San_Jose,ST=California,C=US unable to get local issuer certificate
+",10.66.179.35,,ssh,tcp,22,ssh,2024-07-25 01:54:32,2024-07-25 01:54:32
+679762276.0,10.66.179.36,403293184.0,-,,10.66.179.36,,Unidentified / Unidentified,Unidentified,-,Not Applicable,Unidentified / Unidentified,Unidentified,Not Applicable,0.0,-,-,-,-,-,-,-,-,Unknown,IP,-,"Jul 24, 2024",-,VM,IP,2.0,334.0,-,"Jul 24, 2024",-,-,-,-,-,27356.0,FTP Server Does Not Support AUTH Command,3.0,3.0,Confirmed,"Jul 24, 2024","Jul 24, 2024",TCP,21,NEW,10.66.179.36,10.66.179.36,,"Upgrade/migrate to a FTP server that supports the AUTH command.
+Workaround:
+Consider using sftp(Upgrade/migrate to a FTP server that supports the AUTH command.
+Workaround:<BR>
+Consider using sftp)",,No,No,-,4.0,"Jan 12, 2012",-,File Transfer Protocol,MEDIUM,"Easy Exploit,Patch Not Available",-,-,-,1.0,"If this vulnerability is successfully exploited, attackers can intercept the credentials by eavesdropping on the connection.",No,2.0,334.0,,"500 AUTH GSSAPI: command not understood.
+",10.66.179.36,,ftp,tcp,21,ftp,2024-07-25 02:28:16,2024-07-25 02:28:16
+679826015.0,10.66.179.37,403280006.0,-,,10.66.179.37,,Unidentified / Unidentified,Unidentified,-,Not Applicable,Unidentified / Unidentified,Unidentified,Not Applicable,0.0,-,-,-,-,-,-,-,-,Unknown,IP,-,"Jul 24, 2024",-,VM,IP,2.0,333.0,-,"Jul 24, 2024",-,CVE-2018-15919,"Remotely observable behaviour in auth-gss2.c in OpenSSH through 7.8 could be used by remote attackers to detect existence of users on a target system when GSS2 is in use. NOTE: the discoverer states 'We understand that the OpenSSH developers do not want to treat such a username enumeration (or ""oracle"") as a vulnerability.'",5,5.3,38948.0,OpenSSH Sensitive Information to an Unauthorized Actor Vulnerability,3.0,3.0,Potential,"Jul 24, 2024","Jul 24, 2024",-,-,NEW,10.66.179.37,10.66.179.37,,Customers are advised to upgrade to OpenSSH 7.9 or later to remediate this vulnerability.(https://www.openssh.com/txt/release-7.9),,No,No,30,4.0,"May 15, 2024","Aug 27, 2018",General remote services,MEDIUM,Easy Exploit,-,-,-,1.0,"Successful exploitation of this vulnerability could lead to a security breach or could affect integrity, availability, and confidentiality.",No,2.0,333.0,,"Vulnerable SSH-2.0-OpenSSH_7.5 FreeBSD-20170903 detected on port 22 over TCP.Vulnerable SSH-2.0-OpenSSH_7.5 FreeBSD-20170903 detected on port 12001 over TCP.
+",10.66.179.37,,ftp,tcp,21,ftp,2024-07-25 01:49:37,2024-07-25 01:49:37

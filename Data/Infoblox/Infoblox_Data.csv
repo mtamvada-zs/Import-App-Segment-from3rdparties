@@ -1,0 +1,2 @@
+"IP Address","Name","MAC Address","DHCP Client Identifier","Status","Type","Active Users","Discover Now","Usage","Lease State","User Name","Task Name","First Discovered","Last Discovered","OS","NetBIOS Name","Device Type(s)","Open Port(s)","Fingerprint","Comment","Site"
+"10.66.179.34","test2","00:50:56:9b:91:80","","Used","Host","0","","","","","","2024-08-02 15:35:49 UTC","2024-08-02 16:20:25 UTC","FreeBSD 11.0-RELEASE (87%)","","","","","",""
