@@ -36,6 +36,8 @@ Tenable Data \- No changes needed. The data obtained from Nessus scan 10.5.7 can
 
 Qualys data \- The tables Assets.csv and Vulnerabilities.csv are merged on ‘Asset ID’ and thus the obtained table is merged to Ports.csv on ‘IPV4 address’. The final output file is called Qualys\_Data.csv and this can be used with the tool. 
 
+Infoblox Data \- No changes needed. The data obtained from IPAM IP Discovery scan can be directly used with the tool.
+
 **Tool Overview** 
 
 The tool is used for mapping and validating columns in a CSV file based on user input, then processing and generating a new CSV file with the specified structure. It allows customers to configure which columns they want to map to the existing columns of the ZPA template. The user has to input the desired columns to map to the ZPA template columns and the output will be downloaded based on the mapping. 
