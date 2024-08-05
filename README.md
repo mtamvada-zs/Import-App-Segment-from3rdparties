@@ -24,6 +24,12 @@ This project is a Proof of Concept and the tool uses applications data from the 
 1. Vulnerabilities.csv \- Vulnerability Management \-\> vulnerabilities \-\> vulnerability  
 1. Ports.csv \- Vulnerability Management \-\> Assets \-\> Ports/Services
 
+* **Infoblox Data: Infoblox_Data.csv**  
+  * Version: 9.0.3
+  * License: NIOS, Grid 
+  * The data was obtained by performing a Infoblox ‘IP Discovery scan’ in the lab. It includes information such as Host, OS, MAC Address, etc,.   
+  * The data is obtained after performing a IP discovery scan on the grid: Data Management -> IPAM -> Network
+
 **Data Preparation**  
    
 Tenable Data \- No changes needed. The data obtained from Nessus scan 10.5.7 can be directly used with the tool. 
@@ -53,6 +59,6 @@ Note: The fields Application FQDN/IP, TCP Ports, UDP Ports are mandatory while m
 **To run the code**
 
 1. Make sure to have Python 2.7 on your computer. Follow here: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
-1. Have pip installed on your computer (Comes with versions greater than Python 2.7.9). If not follow here: [https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip](https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip)  
-1. To view the results of the tool, find the newly created file: Output.csv to view the results.
+2. Have pip installed on your computer (Comes with versions greater than Python 2.7.9). If not follow here: [https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip](https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip)  
+3. To view the results of the tool, find the newly created file: Output.csv.
 
