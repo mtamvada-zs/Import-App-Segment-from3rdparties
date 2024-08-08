@@ -1,25 +1,19 @@
 **Application Segment Import Tool** 
 
-**Problem Statement**
 
-ZPA’s current application discovery poses a security risk because to initially discover which applications are being accessed within an organization, it asks the customer to put in wildcard app segments which means that for a period of time, the access is open to everyone until the user defines who is supposed to access them. This practice contradicts ZTNA principles "never trust, always verify.”
+**What does the tool provide?** 
 
-**Proposed Solution** 
-
-The proposed solution is the App Segment Import Tool which imports applications from external sources (ex. Tenable, Qualys, ServiceNow, etc.) and leverages ZPA to accurately identify and categorize apps without the need for wildcard segments which allows us to establish granular access policies from the start sticking to ZTNA principle. 
-
-**Data Sources** 
-
-This project is a Proof of Concept and the tool uses applications data from the following external sources:
+This App Segment Import Tool lets you import ZPA Applications from external sources such as Tenable Nessus, Qualys, Infoblox. The tooling provided in this Repo converts the output of these tools to a format that ZPA App Import accepts 
+Each source has its nuances. For example we could not get FQDN, port and vulnerability information in one export from Qualys. We hope that you use the examples provided in this repo will help you extend the tool with any application you have. ZPA App import at the time of writing this document does not do anything with the additional metadata. 
 
 * **Tenable Data: tenable\_data.csv**  
   * Version: 10.5.7  
-  * A ‘Discovery scan’ was conducted using Tenable in the Zscaler lab. The data includes detailed information on vulnerabilities, Cvss scores, and associated metadata.  
+  * The Tenable scan export has information on vulnerabilities, cvss scores, and associated metadata.  
   * The Tenable Discovery scan helps in identifying all active assets and services running within the network.   
 * **Qualys Data: qualys\_data.csv**  
   * Version: 3.18.1  
-  * The data was obtained by performing a Qualys ‘Network scan’ in the lab. It includes information on Asset ID, IPV4 addresses, protocol, ports etc,.   
-  * There are three primary files: Assets.csv, Vulnerabilities.csv and Ports.csv. The files can be obtained from Qualys Cloud Platform from the following paths   
+  * The Qualys scan data export has information on Asset ID, IPV4 addresses, protocol, ports etc,.   
+  * There are three  files: Assets.csv, Vulnerabilities.csv and Ports.csv. The files can be obtained from Qualys Cloud Platform from the following paths   
 1. Assets.csv \- Vulnerability Management \-\> vulnerabilities \-\> assets   
 1. Vulnerabilities.csv \- Vulnerability Management \-\> vulnerabilities \-\> vulnerability  
 1. Ports.csv \- Vulnerability Management \-\> Assets \-\> Ports/Services
