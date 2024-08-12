@@ -55,7 +55,10 @@ The following is the Import template for ZPA that is used for the tool:
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
 
 **How to access the output file?**
-After mapping the 
+After mapping the columns, the user is asked to enter the name and path of the output file to be downloaded. If the user doesnt specify the name, the default is 'Output.csv'. If the user doenst specify the path he can find the file in the folder AppSegmentImportTool. Everytime the user runs the tool for new source, the 'Output.csv' in the AppSegmentImportTool gets overwritten.
+
+**Current Limitations of ZPA App Segment Import**
+1. App Import does not accept duplicate FQDN/IP values. This issue is being fixed. 
 
 **To run the code**
 
