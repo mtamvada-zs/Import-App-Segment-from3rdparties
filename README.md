@@ -1,10 +1,13 @@
-**Application Segment Import Tool** 
+**Application Segment Import ** 
 
 
 **What does the tool provide?** 
 
-This App Segment Import Tool lets you import ZPA Applications from external sources such as Tenable Nessus, Qualys, Infoblox. The tooling provided in this Repo converts the output of these tools to a format that ZPA App Import accepts 
+This App Segment Import Tool lets you import ZPA Applications from external sources such as Tenable Nessus, Qualys, Infoblox. The e provided in this Repo converts the output of these tools to a format that ZPA App Import accepts 
 Each source has its nuances. For example we could not get FQDN, port and vulnerability information in one export from Qualys. We hope that you use the examples provided in this repo will help you extend the tool with any application you have. ZPA App import at the time of writing this document does not do anything with the additional metadata. 
+
+** No liability statement **
+The tool provided in this repository is not supported by Zscaler and is provided as an example so users can change as needed. This tool is provided as per MIT License 
 
 * **Tenable Data: tenable\_data.csv**  
   * Version: 10.5.7  
@@ -65,3 +68,5 @@ After mapping the columns, the user is asked to enter the name and path of the o
 1. Make sure to have Python 2.7 or above on your computer. Follow here: [https://www.python.org/downloads/](https://www.python.org/downloads/)  
 2. Have pip installed on your computer (Comes with versions greater than Python 2.7.9). If not follow here: [https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip](https://pip.pypa.io/en/stable/installing/\#do-i-need-to-install-pip)  
 
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
