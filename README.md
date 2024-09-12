@@ -6,7 +6,7 @@
 This App Segment Import Tool lets you import ZPA Applications from external sources such as Tenable Nessus, Qualys, Infoblox. The e provided in this Repo converts the output of these tools to a format that ZPA App Import accepts 
 Each source has its nuances. For example we could not get FQDN, port and vulnerability information in one export from Qualys. We hope that you use the examples provided in this repo will help you extend the tool with any application you have. ZPA App import at the time of writing this document does not do anything with the additional metadata. 
 
-** No liability statement **
+**** No liability statement ****
 The tool provided in this repository is not supported by Zscaler and is provided as an example so users can change as needed. This tool is provided as per MIT License 
 
 * **Tenable Data: tenable\_data.csv**  
